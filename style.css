@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logodiv{
+    display: flex;
+    align-items:center ;
+    color: black;
+    gap: 10px;
+}
+.logodiv img{
+        width: 7%;
+}
+.logodiv span{
+    text-transform: uppercase;
+    font-family: googlesans;
+    font-size: 24px;
+}
+header{
+    width: 100%;
+    display: flex;
+    box-shadow:0 10px 10px rgba(0,0,0,0.1);
+    color: white;
+    padding: 30px 60px;
+    justify-content: space-around;
+}
+.navlinks{
+    display: flex;
+   gap: 30px;
+}
+.navlinks li{
+    list-style: none;
+}
+.navlinks li a{
+    text-decoration: none;
+    color: black;
+    font-family: googlesans ;
+}
+@font-face {
+    font-family: googlesans;
+    src: url( ./fonts/GoogleSans-Italic-VariableFont_GRAD\,opsz\,wght.ttf);
+}
+#orange{
+    color: #ff8367;
+}
+.hero{
+    display: flex;
+    align-items: center;
+}
+.shoes img{
+    width:80%;
+}  
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#orange h1{
+    color: #ff8367;
+}
+#bt{
+    width: 70px;
+    padding: 10px 0px;
+    border-color: transparent;
+    border-radius:3px solid black;
+    color: black;
+    background-color: aqua;
+    border: none;
+    outline: none;
+}
+        
