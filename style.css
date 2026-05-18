@@ -1,72 +1,225 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.logodiv{
+
+body {
+    background-color: #FFF7F4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* NAVBAR STYLE */
+.navbar {
     display: flex;
-    align-items:center ;
-    color: black;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 6%;
+    background-color: #FFF7F4;
 }
-.logodiv img{
-        width: 7%;
-}
-.logodiv span{
-    text-transform: uppercase;
-    font-family: googlesans;
-    font-size: 24px;
-}
-header{
-    width: 100%;
-    display: flex;
-    box-shadow:0 10px 10px rgba(0,0,0,0.1);
-    color: white;
-    padding: 30px 60px;
-    justify-content: space-around;
-}
-.navlinks{
-    display: flex;
-   gap: 30px;
-}
-.navlinks li{
-    list-style: none;
-}
-.navlinks li a{
-    text-decoration: none;
-    color: black;
-    font-family: googlesans ;
-}
-@font-face {
-    font-family: googlesans;
-    src: url( ./fonts/GoogleSans-Italic-VariableFont_GRAD\,opsz\,wght.ttf);
-}
-#orange{
-    color: #ff8367;
-}
-.hero{
+
+.logo-container {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
-.shoes img{
-    width:80%;
-}  
-.content{
+
+.logo-img {
+    width: 45px;
+    height: auto;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #363958;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3D3D3F;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #FF7E5F;
+}
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8% 90px 8%;
+    background-color: #FFF7F4;
+}
+
+.hero-left {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-bg {
+    width: 340px;
+    height: 340px;
+    background-color: #FFA451;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-shoe {
+    width: 130%;
+    position: absolute;
+    top: -15px;
+    filter: drop-shadow(15px 20px 15px rgba(0, 0, 0, 0.15));
+}
+
+.hero-right {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.hero-brand {
+    font-size: 2.8rem;
+    color: #FF7E5F;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: #2D3154;
+    font-weight: 800;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    color: #6C6C6C;
+    font-size: 0.95rem;
+    max-width: 420px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+.buy-btn {
+    background-color: #3F51B5;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.products-section {
+    background-color: #E5E7EB; 
+    padding: 60px 6% 40px 6%;
+}
+
+.formal-section {
+    padding-top: 10px; 
+    padding-bottom: 80px;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: #2D3154;
+    font-weight: 700;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important; 
+    gap: 30px;
+    width: 100%;
+}
+
+
+.product-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
 }
-#orange h1{
-    color: #ff8367;
+
+
+.img-container {
+    background-color: #F1F1F1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px; 
+    margin-bottom: 20px;
+    padding: 20px;
 }
-#bt{
-    width: 70px;
-    padding: 10px 0px;
-    border-color: transparent;
-    border-radius:3px solid black;
-    color: black;
-    background-color: aqua;
+
+
+.shoe-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 10px rgba(0,0,0,0.12));
+}
+
+.card-details h3 {
+    font-size: 1.3rem;
+    color: #2D3154;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-details p {
+    font-size: 0.88rem;
+    color: #6C6C6C;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #FF7E5F;
+}
+
+.buy-btn-sm {
+    background-color: #3F51B5;
+    color: white;
     border: none;
-    outline: none;
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
 }
-        
+

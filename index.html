@@ -1,48 +1,134 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nike React Clone</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-    <!-- div start -->
-    <header>
-        <div class="logodiv">
-            <img src="./images/WhatsApp Image 2026-05-07 at 11.04.21 PM.jpeg" alt="logo">
-            <span id="orange">nike</span>
-            <span>react</span>
-          <!-- div end -->
-        </div>
 
-        <!-- nav start -->
-        <nav>
-            <ul class="navlinks">
-                <li> <a href="">Home </a></li>
-                <li> <a href="">Product </a></li>
-                <li> <a href="">About Us </a></li>
-                <li> <a href="">Contact Us </a></li>
-            </ul>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="./images/WhatsApp Image 2026-05-07 at 11.04.21 PM.jpeg" alt="Nike Logo" class="logo-img">
+            <span class="logo-text">NIKE REACT</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Product</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
         </nav>
-        <!-- nav end -->
     </header>
-    <!-- hero section start -->
-    <div class="hero">
-        <div class="shoes">
-            <img src="./images/WhatsApp Image 2026-05-07 at 11.03.30 PM.jpeg" alt="shoes">
-        </div>
-        <div class="content">
-            <h1 id="orange">NIKE REACT</h1>
-            <h1>INFINITY RUN 2</h1>
-            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nihil facilis odio aliquid beatae
-                quibusdam maxime dolorem exercitationem aut, ipsam, ipsum numquam aspernatur error. Iusto nobis nostrum
-                nihil soluta mollitia!</P>
-                <button id="bt">BUY NOW</button>
-                 <!-- hero section end  --> 
-        </div>
-        </div>
 
+    <section class="hero-section">
+        <div class="hero-left">
+            <div class="circle-bg">
+                <img src="./images/WhatsApp Image 2026-05-07 at 11.03.30 PM.jpeg" alt="Nike React Infinity Run 2" class="hero-shoe">
+            </div>
+        </div>
+        <div class="hero-right">
+            <h1 class="hero-brand">NIKE REACT</h1>
+            <h2 class="hero-title">INFINITY RUN 2</h2>
+            <p class="hero-desc">
+                The Nike React Infinity Run 2 continues to help reduce injury and keep you running.
+            </p>
+            <button class="buy-btn">
+                <span class="cart-icon"></span> 🛒 BUY NOW 
+            </button>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <h2 class="section-heading">CASUAL SHOES</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="./images/shoe 1.png" alt="Nike Shoe" class="shoe-img">
+                </div>
+                <div class="card-details">
+                    <h3>Nike Shoe</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="card-footer">
+                        <span class="price">$234</span>
+                        <button class="buy-btn-sm">🛒 BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="./images/shoe 2.png" alt="Sneakers Skate Shoe" class="shoe-img">
+                </div>
+                <div class="card-details">
+                    <h3>Sneakers Skate Shoe</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="card-footer">
+                        <span class="price">$234</span>
+                        <button class="buy-btn-sm">🛒 BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="././images/image.png" ac:\Users\m\nike-react-assignment\images\formalshoe2.pngc:\Users\m\nike-react-assignment\images\formalshoe2.pnglt="Sneakers Basketball Shoe" class="shoe-img">
+                </div>
+                <div class="card-details">
+                    <h3>Sneakers Basketball Shoe</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="card-footer">
+                        <span class="price">$234</span>
+                        <button class="buy-btn-sm">🛒 BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section formal-section">
+        <h2 class="section-heading">FORMAL SHOES</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="./images/formalshoe2.png" alt="Prestige High-Cut Leather" class="shoe-img">
+                </div>
+                <div class="card-details">
+                    <h3>Prestige High-Cut Leather</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="card-footer">
+                        <span class="price">$234</span>
+                        <button class="buy-btn-sm" >🛒 BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="./images/image copy 2.png" alt="Slip-On Formal Shoe" class="shoe-img">
+                </div>
+                <div class="card-details">
+                    <h3>Slip-On Formal Shoe</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="card-footer">
+                        <span class="price">$234</span>
+                        <button class="buy-btn-sm">🛒 BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="./images/image copy.png" alt="Slip-On Formal Shoe" class="shoe-img">
+                </div>
+                <div class="card-details">
+                    <h3>Slip-On Formal Shoe</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="card-footer">
+                        <span class="price">$234</span>
+                        <button class="buy-btn-sm">🛒 BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
